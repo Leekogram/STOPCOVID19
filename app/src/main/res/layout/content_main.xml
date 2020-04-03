@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="18dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="18dp"
+                        app:cardBackgroundColor="@color/cardview_light_background"
+                        app:cardCornerRadius="15dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <VideoView
+                                android:id="@+id/videoPlayer"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="CORONAVIRUS DISEASE"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#ccc"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="COVID-19"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="serif"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV)"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="serif"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Coronavirus disease (COVID-19) is a new strain that was discovered in 2019 and has not been previously identified in humans."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="serif"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Coronaviruses are zoonotic, meaning they are transmitted between animals and people.  Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet infected humans."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/giphy" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="8dp"
+                        android:text="How it spreads:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+
+
+    <TextView
+        android:id="@+id/source1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:gravity="start"
+        android:padding="8dp"
+        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="COVID-19 SYMPTOMS"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention."
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="8dp"
+                        android:text="People may experience:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:fontFamily="serif"
+                        android:text="• Runny nose"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:text="• Sore throat"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="• Cough"
+                        android:fontFamily="serif"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="• Fever"
+                        android:fontFamily="serif"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:fontFamily="serif"
+                        android:text="• Difficulty breathing (severe cases)"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:id="@+id/source2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="COVID-19 PREVENTION"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Do:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/image3"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image4"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:src="@drawable/image1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Avoid close contact (1 meter or 3 feet) with people who are unwell"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image7"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Stay home and self-isolate from others in the household if you feel unwell"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Don't:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="Touch your eyes, nose, or mouth if your hands are not clean"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:id="@+id/source3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="COVID-19  TREATMENT"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive care to help them breathe."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="8dp"
+                        android:text="Selfcare:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• rest and sleep"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="• keep warm"
+                        android:fontFamily="serif"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• drink plenty of liquids"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• use a room humidifier or take a hot shower to help ease a sore throat and cough"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="8dp"
+                        android:text="Medical treatments:"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider of any recent travel or recent contact with travelers."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+
+                    <TextView
+                        android:id="@+id/source4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="Myth-Busters"
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="There is alot of false imformation around. These are the facts"
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• People of all ages CAN be infected by the coronavirus. Older people and people with pre-existing medical conditions (such) as asthma, diabetes, heart (disease) appear to be more vulnerable to becoming severely ill with the virus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Cold weather and snow CANNOT kill the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• The coronoavirus CAN be transmitted in areas with hot and humid climates."
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• The coronavirus CANNOT be transmitted through mosquito bites."
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• There is NO evidence that companion animals/pets such as dogs or cats can transmit the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Taking hot bath DOES NOT prevent the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Hand dryers are NOT effective in killing coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Ultraviolet light SOUND NOT be used for sterilization and can cause skin irritation."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Spraying alcohol or chlorine all over the body WILL NOT kill viruses that have already entered your body."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type b(Hib) vaccines, DO NOT provide protection against the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• There is no evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has prottected people from the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• Antibiotics DO NOT work against viruses, antibiotics only work against bacteria."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:fontFamily="serif"
+                        android:text="• To date. there is NO specific medicine recommended to prevent or treat the coronavirus."
+                        android:textColor="#000"
+                        android:textSize="13.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+                    <TextView
+                        android:id="@+id/source5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

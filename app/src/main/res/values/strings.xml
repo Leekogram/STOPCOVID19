@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">STOPCOVID-19</string>
+    <string name="action_settings">Settings</string>
+    <string name="news">"<u>Latest News About Coronavirus</u>"</string>
+    <string name="feedback">"<u>Feedback</u>"</string>
+    <string name="about">"<u>About</u>"</string>
+    <string name="send_to">Send to</string>
+</resources>
